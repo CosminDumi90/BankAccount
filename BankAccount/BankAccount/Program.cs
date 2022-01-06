@@ -23,7 +23,7 @@ namespace BankAccount
 
             SecretAccount secretAccount = new SecretAccount("Cosmin Dumitru", "1234567sec", 100, true);
 
-            secretAccount.SecretMakeDeposit(100,new DateTime(2021,9,9),Vice.whiskey);
+            secretAccount.SecretMakeDeposit(100);
             Console.WriteLine(currentAccount.Balance);
            
 

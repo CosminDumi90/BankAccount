@@ -19,7 +19,7 @@ namespace BankAccount
 
         public string Name { get { return name; } }
         public string Number { get { return number; } }
-        public decimal Balance { 
+        public virtual decimal Balance { 
             get 
             { 
                 return this.balance; 
