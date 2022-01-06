@@ -16,7 +16,7 @@ namespace BankAccount
 
         public override void MakeWithdrawal(decimal amount)
         {
-            Console.WriteLine($"Can't make withdrawal, {this.GetType().Name} is only for deposits");
+            Console.WriteLine($"Can't make withdrawal, {this.GetType().Name} is only for deposits\n");
         }
 
       

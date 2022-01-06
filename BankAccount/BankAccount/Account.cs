@@ -84,7 +84,7 @@ namespace BankAccount
             else
             {
                 this.balance += amount;
-                Console.WriteLine($"After deposit the balance for your {this.GetType().Name} is: {this.balance}");
+                Console.WriteLine($"After deposit the balance for your {this.GetType().Name} {this.number} is: {this.balance}");
             }
         }
 
@@ -108,7 +108,7 @@ namespace BankAccount
             else
             {
                 this.balance -= amount;
-                Console.WriteLine($"After withdrawal the balance for your {this.GetType().Name} is: {this.balance}");
+                Console.WriteLine($"After withdrawal the balance for your {this.GetType().Name} {this.number} is: {this.balance}\n");
             }
 
         }

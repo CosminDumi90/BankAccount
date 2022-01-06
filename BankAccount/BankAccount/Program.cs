@@ -10,6 +10,7 @@ namespace BankAccount
             Account currentAccount = new Account("Cosmin Dumitru", "1234567", 2000, true);
             currentAccount.MakeDeposit(2000);
             currentAccount.MakeWithdrawal(1000);
+          
        
             
 
@@ -21,10 +22,10 @@ namespace BankAccount
             gameAccount.MakeWithdrawal(200);
             gameAccount.MakeDeposit(100);
 
-            SecretAccount secretAccount = new SecretAccount("Cosmin Dumitru", "1234567sec", 100, true);
-
-            secretAccount.SecretMakeDeposit(100);
-            Console.WriteLine(currentAccount.Balance);
+            SecretAccount secretAccount = new SecretAccount("Cosmin Dumitru", "1234567sec", 100, true,currentAccount);
+            secretAccount.MakeDeposit(100);
+            secretAccount.SecretPurchase(90, new(2022, 1, 6),Vice.whiskey);
+          
            
 
             
